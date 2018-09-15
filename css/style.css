@@ -1,0 +1,208 @@
+/* ROOTS*/
+html,
+body,
+.view {
+  height: 100%;
+margin:  0;
+padding: 0;}
+.b-box{
+  box-sizing: border-box;
+}
+.tit_{
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+/* Full Page Carousel itself*/
+.carousel {
+  height: 100%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
+
+/* Navbar animation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.top-nav-collapse {
+  background-color: #1C2331; }
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331; } }
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1C2331; }
+/* PErsonalize*/
+
+/* POS */
+.main__pos{
+  height: 100vh;
+}
+.wrap_pos{
+  margin-left: .5%;
+}
+
+/* Panel Derecho*/
+.der{
+  height: 100vh;
+  background: #1C2331;
+}
+
+.wrap__find{
+  height: 4em;
+  width: 100%;
+  background: #dfe6e9;
+}
+.wrap_hr{
+  height: .1em;
+  width: 100%;
+  background: #b2bec3;
+
+}
+.wrap_product{
+  height: 29em;
+  width: 100%;
+  background:#ffff;
+  overflow-y: scroll;
+ 
+}
+
+.del__{
+  background: rgb(212, 22, 22);
+  /*border: none;*/
+  box-sizing: border-box;
+  padding: .2em .8em;
+  color: #ffff;
+  border-radius: 6px;
+  margin-top: 14%;
+  cursor: pointer;
+  transition: all ease 200ms;
+  -webkit-box-shadow: -1px 20px 30px -11px rgba(222,53,53,1);
+  -moz-box-shadow: -1px 20px 30px -11px rgba(222,53,53,1);
+  box-shadow: -1px 20px 30px -11px rgba(222,53,53,1);
+}
+.del__:hover{
+  background: rgb(236, 81, 81);
+  transition: all ease 200ms;
+}
+
+.wrapping_detail:hover{
+  background: rgba(212, 212, 212, 0.384);
+  transition: all ease 200ms;
+}
+
+.total_wrap{
+  height: 6em;
+  width: 100%;
+  background: #1C2331;
+  border-radius: 4px;
+}
+.noseaun{
+  background: #fff;
+}
+.total_detail{
+  height: 6em;
+  width: 100%;
+}
+
+
+
+
+
+
+
+.pay_type{
+  margin-left: 3.5%;
+}
+.form-check{
+  margin: 0 auto;
+  background: #dfe6e9;
+  border-radius: 4px;
+}
+input{display: none;}
+input+label{
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  margin: 0 auto;
+  font-weight: bolder;
+  border: 1px solid #1C2331;
+  padding: .2em 1.2em;
+  border-radius: 4px;
+  transition: all ease 200ms;
+}
+input:checked+label{
+  background: #1C2331;
+  font-weight: bolder;
+  padding: .2em 1.2em;
+  color: #ffff;
+}
+
+
+/*Style 03*/
+.S3 label:before{
+  content: "";
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  background: #1C2331;
+  transition: all 0.3s ease;
+  border: 1px solid #1C2331;
+  transition: all ease 200ms;
+}
+.S3 input:checked + label:before{
+  border: 1px solid #1C2331;
+  box-shadow: inset 0 0 0 4px transparent;
+}
+
+.btn-group{
+  margin: 0 auto !important;
+}
+.izq{
+  height: 100vh;
+  background: rgb(255, 255, 255);
+}
+
+.clientes_wrap{
+    height: 8em;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #dfe6e9;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.find_client{
+  color: #1C2331;
+
+}
+.payment_wrap{
+  background: #dfe6e9;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.table tbody th{
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 18px;
+}
+
+.table tbody td{
+  margin: 0;
+  padding: .3em;
+  border: none;
+  font-size: 18px;
+}

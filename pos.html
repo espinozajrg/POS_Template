@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>POS</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <!-- Navbar -->
+    <main class="main__pos">
+      <div class="wrap_pos">
+        
+          <div class="col-8 border der float-right p-0 m-0">
+<!-- EL BUSCADOR === INPUT-->
+            <div class="wrap__find b-box p-0 m-0 z-depth-1-half">
+              <div class="input-group input-group mb-3 pt-2 pr-2">
+                <div class="input-group-prepend">
+                  <span class="text-dark h5 text-right pr-3 pl-2 mt-2 pt-1" id="inputGroup-sizing-lg"> <i class="fas fa-search"></i> Buscar [ F4 ]</span>
+                </div>
+                <input type="text" class="form-control mt-1" aria-label="Large" aria-describedby="inputGroup-sizing-default" autofocus>
+              </div>
+            </div>
+<!-- RESULTADOS-->
+        <div class="wrap_product">
+          <div class="container">
+            <div class="row font-weight-bold pt-2 pb-2">
+              <div class="col-1 ">Cant.</div>
+              <div class="col ">Descripcion</div>
+              <div class="col-2 ">Precio Unit</div>
+              <div class="col-2 ">Sub Total</div>
+              <div class="col-1 text-center font-weight-bold ">!</div>
+             </div>
+             <div class="wrap_hr b-box m-0 p-0"></div>
+           
+<!-- ###### los div para mostrar los productos -->
+      <div class="row  p-1 border-bottom wrapping_detail" id="wrappingDetail">
+            <div class="col-1 p-1 m-0">
+            <div class="input-group mb-0 p-0">
+            <input type="text" class="form-control p-0 m-0 text-center" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="1"><!-- Cantidad del Producto-->
+            </div>
+            </div>
+            <div class="col font-weight-bold mt-2">Nombre del Producto</div>
+            <div class="col-2  font-weight-bold mt-2 text-center">1.000</div>
+            <div class="col-2  font-weight-bold mt-2 text-center">1.000</div>
+            <div class="col-1 "><button class="btn del__ mt-2" onclick="">x</button></div>
+      </div>
+<!-- ###### Cierre div para mostrar los productos -->
+
+
+
+
+
+
+
+
+      </div>
+          </div> <!-- CIERRE DEL CONTAINER-->
+          <div class="total_wrap">
+              <div class="container">
+                <div class="row  text-light">
+                  <div class="col-6  noseaun">1</div>
+                  <div class="col-6  total_detail">
+                  <table class="table m-0 p-0">
+                      <tbody>
+                        <tr>
+                          <th scope="row" for="importe" class=" pt-2 text-right">Descuento:</th>
+                          <td><span class="tit_ pl-5">1.000</span> AR$ </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class=" pt-2 text-right">Total: </th>
+                          <td><span class="h2 text-right pl-5 ">1.000</span> AR$ </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+<!-- PRECIOS -->
+
+          </div>
+<!-- IZQUIERDO -->
+          <div class="col-4 border izq m-0 p-0 ">
+              <nav class="navbar  navbar-expand-lg navbar-dark unique-color-dark
+              scrolling-navbar m-0 p-2">
+                  <div class="container">
+              
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+                      <strong>MDB</strong>
+                    </a>
+              
+                    <!-- Collapse -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+              
+                    <!-- Links -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
+                      <!-- Left -->
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Incio
+                            <span class="sr-only">(current)</span>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">Ventas</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="https://mdbootstrap.com/getting-started/" target="_blank">Salir</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+                <!-- Fin Nav-->
+<!-- SELECCION DEL CLIENTE-->
+                <div class="clientes_wrap mb-2 mt-1 z-depth-1-half ">
+                  <div class="container">
+                      <p class="tit_ text-center pt-1">Clientes [ F2 ]</p>
+                    <div class="col-10 border float-right d-inline">
+                      <!-- Default input -->
+                   <input class="form-control form-control-md" type="text" placeholder="Nombre y Apellido"  width="80px">
+                    <input class="form-control form-control-md" type="text" placeholder="Id - DNI - CUIT" >
+                    </div>
+                    <div class="col-2 border ">
+                      <a href="" class="find_client text-center">
+                        <i class="fas fa-users fa-2x"></i><br>
+                       <strong>Buscar [ F7 ]</strong> 
+                      </a>
+                    </div>
+                  </div>
+                </div>
+<!-- SELECCION DEL METODO DE PAGO -->
+                <div class="form-check d-block m-0 p-0 text-dark pt-1 pb-3 z-depth-1-half">
+                    <div class=""><p class="tit_ text-center">Tipo de Pago</p> 
+                      <input type="radio" name="n3" id="efectivo__" checked>
+                      <label for="efectivo__" class="pay_type"> <i class="far fa-money-bill-alt"></i> Efectivo</label>
+                      
+                      <input type="radio" name="n3" id="debito__">
+                      <label for="debito__" class="pay_type"><i class="fas fa-credit-card"></i> Debito</label>  
+                      
+                      <input type="radio" name="n3" id="credito__">
+                      <label for="credito__" class="pay_type"><i class="fab fa-cc-visa"></i> Credito</label>  
+                    </div>   
+              </div>
+<!-- SELECCION DEL PAGO-->
+            <div class="payment_wrap pl-3 pr-3 border mt-2 pt-1">
+                <p class="tit_ text-center">Pago [ F8 ]</p>
+                <table class="table m-0 p-0">
+                    <tbody>
+                      <tr>
+                        <th scope="row" class=" pt-2">Total: </th>
+                        <td><span class="tit_">1.000</span> AR$ </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" for="importe" class=" pt-2">Importe:</th>
+                        <td><input type="text" id="exampleForm2" class="form-control" id="importe"></td>
+                      </tr>
+                      <tr>
+                          <th scope="row" class=" pt-2 ">Cambio: </th>
+                          <td><span class="tit_">0.0</span> AR$</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+            </div>
+            <div class="btn-group mt-3 pt-3 pl-5 ml-2" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary btn-outline-danger ">Cancelar</button>
+                <div class="m-2"></div>
+                <button type="button" class="btn btn-primary ">Procesar [F9]</button>
+            </div>
+
+          </div>
+        
+      </div>
+
+
+
+
+    </main>
+  <!--Main layout-->
+
+
+
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>
