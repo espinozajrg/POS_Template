@@ -261,7 +261,7 @@ select:focus{
 
 }
 .inactivo{
-  background: #CC0000;
+  background: #ff4444;
   padding: 0 .3em;
   margin: 0;
   color: #fff;
