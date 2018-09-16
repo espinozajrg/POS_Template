@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agregar Producto</title>
+    <meta charset="utf-8">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+        <!-- Navbar -->
+  <nav class="navbar  navbar-expand-lg navbar-dark indigo scrolling-navbar m-0 p-1">
+        <div class="container">
+    
+          <!-- Brand -->
+          <a class="navbar-brand" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+            <strong>MDB</strong>
+          </a>
+    
+          <!-- Collapse -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">About MDB</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://mdbootstrap.com/getting-started/" target="_blank">Free download</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            </ul>
+    
+            <!-- Right -->
+            <ul class="navbar-nav nav-flex-icons">
+              <li class="nav-item">
+                <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
+                  <i class="fa fa-twitter">Salir</i>
+                </a>
+              </li>
+              <li class="nav-item ml-5">
+                <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded waves-effect waves-light"
+                  target="_blank">
+                  <i class="fa fa-user mr-2"> <span> Nombre de usuario</span> </i>
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+    
+        </div>
+      </nav>
+      <!-- Navbar -->
+
+<main class="main_add">
+    <div class="container">
+        <div class="col-12">
+            <form class="text-center  pt-2 font-weight-bold">Añadir Prodcutos al Inventario</p>
+                <hr>
+            <div class="form-row mb-2">
+            <div class="col">
+                    <!-- First name -->
+                    <span>Código de Barras</span>
+                    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Ingrese el Código de Barras">
+                </div>
+                <div class="col">
+                    <!-- Last name -->
+                    Nombre del Producto
+                    <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="" disabled>
+                </div>
+            </div>
+            <div class="form-row mb-2">
+                    <div class="col">
+                            <!-- First name -->
+                            <span>Costo</span>
+                            <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Ingrese el Costo">
+                        </div>
+                        <div class="col">
+                                <!-- First name -->
+                                <span>Precio de Venta</span>
+                                <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Ingrese el Código de Barras">
+                            </div>
+                        <div class="col">
+                            <!-- Last name -->
+                            Relacion Factura
+                            <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Ingrese número de la boleta" >
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-danger waves-effect pt-2 pb-2">Cancelar</button>
+                    <button class="btn btn-success pt-2 pb-2">Agregar</button>
+            </form>
+
+        </div>
+        <div class="col-12 border wrap_add_products mt-2 pb-2 mb-2">
+                ##### PODEMOS USAR ESTOS DIVS
+                <!-- ###### los div para mostrar los productos agregados-->
+                <div class="row  p-1 mb-2 mt-2 border-bottom wrapping_detail" id="wrappingAddProducts">
+                         
+                <div class="col-2 font-weight-bold mt-2">Fecha de Ingreso</div>
+                <div class="col-2 font-weight-bold mt-2">Nombre del Producto</div>
+                <div class="col-2 font-weight-bold mt-2">Codigo de Barras</div>
+                <div class="col-1 font-weight-bold mt-2">Costo</div>
+                <div class="col-2 font-weight-bold mt-2">Precio de Venta</div>
+                <div class="col-1 "><button class="btn del__ mt-2 primary-color" onclick="">Edit</button></div><div class="col-1 "><button class="btn del__ mt-2" onclick="remove()">x</button></div>
+                
+                </div>
+                <!-- ###### Cierre div para mostrar los productos -->
+
+
+
+                ####### O PODEMOS USAR LA TABLA O LA CAMBIAS POR LA OTRA
+                <table class="table table-striped table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col-1">#</th>
+                            <th scope="col-2">Fecha de Registro</th>
+                            <th scope="col-4">Producto</th>
+                            <th scope="col-1">Costo</th>
+                            <th scope="col-1">Precio</th>
+                            <th scope="col-1">Acción</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>26-08-2018</td>
+                            <td>Destornillador</td>
+                            <td>1.000</td>
+                            <td>1.100</td>
+                            <td><button class="btn del__ mt-2 primary-color" onclick="">Edit</button><button class="btn del__ mt-2" onclick="">x</button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>27-08-2018</td>
+                            <td>Cualquier vaina</td>
+                            <td>100</td>
+                            <td>150</td>
+                            <td><button class="btn del__ mt-2 primary-color" onclick="">Edit</button><button class="btn del__ mt-2" onclick="">x</button></td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>3-12-2018</td>
+                            <td>Otra Cosa</td>
+                            <td>200</td>
+                            <td>250</td>
+                            <td><button class="btn del__ mt-2 primary-color" onclick="">Edit</button><button class="btn del__ mt-2" onclick="">x</button></td>
+                            
+                          </tr>
+                        </tbody>
+                      </table>
+
+        </div>
+
+    </div>
+</main>
+
+
+
+
+
+
+
+
+        <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edición de Usuarios</title>
+    <meta charset="utf-8">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+     
+
+      <main class="add_user">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 add_user wrap">
+                <form class="text-center  pt-2 mt-4">
+                        <p class="tit_ font-weight-bold">Creación de Usuarios.</p><hr>
+                        <!-- CATEGORIAS -->
+                        <label>Permisología</label>
+                        <select class="custom-select mb-3" id="inputGroupSelect01">
+                        <option selected>Seleccione la Permisología...</option>
+                        <option value="1">Administrador</option>
+                        <option value="2">Supervisor</option>
+                        <option value="3">Cajero</option>
+                        </select>
+                        <span>Aliass del Usuario</span>
+                        <input type="text" id="defaultRegisterFormEmail" class="form-control mb-2" placeholder="Alias del Usuario">
+                        <span>Nombre y Apellido</span>
+                        <input type="text" id="defaultRegisterFormEmail" class="form-control mb-2" placeholder="Nombre y Apellido">
+                        <span>Contraseña</span>
+                        <input type="text" id="defaultRegisterFormEmail" class="form-control mb-2" placeholder="Contraseña">
+                        <button class="btn  success-color
+                        my-4 btn-block" type="" onclick="closeWO()">Modificar Usuario </button>
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+
+      </main>
+
+
+
+
+
+
+
+
+        <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="../js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript" src="../js/main.js"></script>
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+</html>

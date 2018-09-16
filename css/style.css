@@ -145,7 +145,14 @@ input:checked+label{
   padding: .2em 1.2em;
   color: #ffff;
 }
-
+input:focus{
+  border: 2px solid #1C2331 !important;
+  box-shadow: none !important;
+}
+select:focus{
+  border: 2px solid #1C2331 !important;
+  box-shadow: none !important;
+}
 
 /*Style 03*/
 .S3 label:before{
@@ -205,4 +212,61 @@ input:checked+label{
   padding: .3em;
   border: none;
   font-size: 18px;
+}
+
+
+
+
+
+
+
+/* Añadir Productos #####################################*/
+
+.main_add{
+ 
+}
+
+.listadd_wrap{
+  height: 28em;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #b2bec3;
+  overflow-y: scroll;
+  border-radius: 3px;
+}
+
+
+
+
+.wrap_add_products{
+  height: 16em;
+  overflow-y: scroll;
+  padding: .1em .2em;
+  overflow-x: hidden;
+  border-top: 5px solid #b2bec3 !important;
+}
+.all_users_wrap{
+  margin-top: 3%;
+  overflow-y: scroll;
+}
+
+.activo{
+  background: #00C851;
+  padding: 0 .3em;
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 4px;
+  height: 1.6em;
+
+}
+.inactivo{
+  background: #CC0000;
+  padding: 0 .3em;
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 4px;
+  height: 1.6em;
+
 }

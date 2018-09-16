@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maestro de Productos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+  <nav class="navbar  navbar-expand-lg navbar-dark indigo scrolling-navbar m-0 p-1">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+        <strong>MDB</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">About MDB</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mdbootstrap.com/getting-started/" target="_blank">Free download</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+        </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
+              <i class="fa fa-twitter">Salir</i>
+            </a>
+          </li>
+          <li class="nav-item ml-5">
+            <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded waves-effect waves-light"
+              target="_blank">
+              <i class="fa fa-user mr-2"> <span> Nombre de usuario</span> </i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <main class="main_masterpro">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 formadd_wrap">
+<!-- FORMULARIOS DE AGREGA PRODUCTOS-->
+                        <form class="text-center  pt-2">
+                        <p class="tit_ font-weight-bold">Catalógo de Producto</p>
+                        <!-- CATEGORIAS -->
+                        <label>Categoria</label>
+                        <select class="custom-select mb-3" id="inputGroupSelect01">
+                        <option selected>Seleccione la Categoria...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        </select>
+                        <span>Código de Barras</span>
+                        <input type="text" id="defaultRegisterFormEmail" class="form-control mb-2" placeholder="Código de Barras">
+                        <span>Nombre del Producto</span>
+                        <input type="text" id="defaultRegisterFormEmail" class="form-control mb-2" placeholder="Nombre del Producto">
+                        <span>Marca</span>
+                        <input type="text" id="defaultRegisterFormEmail" class="form-control mb-2" placeholder="Marca">
+                        <span>Proveedor</span>
+                        <input type="text" id="defaultRegisterFormEmail" class="form-control mb-2" placeholder="Proveedor">
+                        <button class="btn  unique-color-dark my-4 btn-block" type="">Agregar </button>
+                        </form>
+        </div>
+
+            <div class="col-7 listadd_wrap mt-3 ml-5 border">
+                <div class="  p-2">
+<!-- ###### los div para mostrar los productos agregados-->
+<div class="row  p-1 mb-2 border-bottom wrapping_detail" id="wrappingAddProducts">
+        <div class="col-4 font-weight-bold mt-2">Codigo de Barras</div>
+        <div class="col-5 font-weight-bold mt-2">Nombre del Producto</div>
+
+        <div class="col-1 "><button class="btn del__ mt-2" onclick="">x</button></div>
+        <div class="col-1 "><button class="btn del__ mt-2 primary-color" onclick="">Edit</button></div>
+  </div>
+<!-- ###### Cierre div para mostrar los productos -->
+
+<!-- ###### los div para mostrar los productos agregados-->
+<div class="row  p-1 mb-2 border-bottom wrapping_detail" id="wrappingAddProducts">
+        <div class="col-4 font-weight-bold mt-2">Codigo de Barras</div>
+        <div class="col-5 font-weight-bold mt-2">Nombre del Producto</div>
+
+        <div class="col-1 "><button class="btn del__ mt-2" onclick="">x</button></div>
+        <div class="col-1 "><button class="btn del__ primary-color mt-2" onclick="">Edit</button></div>
+  </div>
+<!-- ###### Cierre div para mostrar los productos -->
+
+
+
+
+
+                </div>
+                
+                 
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-8"></div>
+                    <div class="col-2"><button class="btn btn-outline-danger waves-effect" type="">Reset </button></div>
+                    <div class="col-2"><button type="button" class="btn btn-success ">Guardar</button></div>
+                </div>
+            
+             </div>
+    
+
+         </div>
+    </div>   
+  </main>
+
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+</html>
