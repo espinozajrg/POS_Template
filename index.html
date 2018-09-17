@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>MPPS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+
+    <!-- EL CSS -->
+    <style type="text/css">
+html,
+body,
+.view {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+/* Full Page Carousel itself*/
+.carousel {
+  height: 100%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
+
+/* Navbar animation */
+.navbar {
+  background-color: transparent;
+  margin: 0;
+padding: 0;
+box-shadow: none !important; }
+
+.top-nav-collapse {
+  background-color: #1C2331; }
+.cont_custom{
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  z-index: 999;}
+.container__form{
+  background-color: rgba(0, 0, 0, 0.473);
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 3px 21px -2px rgba(0, 0, 0, 0.795);
+-moz-box-shadow: 0px 3px 21px -2px rgba(0, 0, 0, 0.774);
+box-shadow: 0px 3px 21px -2px rgba(0, 0, 0, 0.76);}
+.logo_mpps{
+  background: url(img/logo-a.png) no-repeat left;
+  background-size: contain;
+  width: 100%;
+  height: 3em;
+  margin: 0;
+  padding: 0;}
+.titulo{
+  color: #fff;
+  font-weight: bolder;
+  text-align: right;}
+.btnn__custom:hover{
+  color: #fff !important;
+  background: #33b5e5 !important;}
+.d-flex p{
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 10%;
+  position: absolute;
+  left: 32%;}
+.carousel-item{
+  z-index: -999;}
+
+  /* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331; } }
+
+@media (min-width: 360px) and (max-width: 767.98px) {
+.navbar {
+ background-color: #1C2331;
+  width: 72% !important;
+margin-left: 1%; }
+
+.logo_mpps {
+  height: 1em;
+  margin-left: 18% !important;}
+.titulo {
+  margin-left: 1%;
+  display: block;
+  text-align: center !important;
+  margin-top: -10%;
+}
+.container__form{
+  left: -38%;
+}
+html{
+  overflow-x: hidden;
+  height: 700px;
+  width: 100%;
+}
+}
+    </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg  scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+<div class="logo_mpps"></div>
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Right -->
+
+      </div>
+     <span class="titulo col-sm-6">Viceministerio de <strong>Recursos, Tecnología y Regulación</strong> </span> 
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url(img/2.png); background-repeat: no-repeat; background-size: cover;">
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center"></div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="view" style="background-image: url(img/5.jpg); background-repeat: no-repeat; background-size: cover;">
+
+         
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+          </div>
+
+
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url(img/7.jpg); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+    
+
+    </div>
+    <!--/.Slides-->
+
+
+
+  </div>
+ 
+  <div class="container cont_custom">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 col-md-6 ">
+        <!-- Default form login -->
+<!-- Material form login -->
+<div class="card container__form white-text">
+
+  <h5 class=" text-center py-4">
+    <strong>Sistema de Gestión y Administración de Equipos</strong>
+  </h5>
+
+  <!--Card content-->
+  <div class="card-body px-lg-5 pt-0">
+
+    <!-- Form -->
+    <form class="text-center" style="color: #fff;">
+
+      <!-- Email -->
+      <div class="md-form">
+        <input type="email" id="materialLoginFormEmail" class="form-control white-text">
+        <label for="materialLoginFormEmail">Usuario</label>
+      </div>
+
+      <!-- Password -->
+      <div class="md-form">
+        <input type="password" id="materialLoginFormPassword" class="form-control white-text">
+        <label for="materialLoginFormPassword">Contraseña</label>
+      </div>
+
+
+
+
+      <!-- Sign in button -->
+      <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0 btnn__custom mt-3" type="submit">Ingresar</button>
+
+      <div class="d-flex justify-content-around mt-5 ">
+        <div>
+          <p>MPPS-OTIC @ 2018</p>
+         
+        </div>
+      </div>
+     
+    </form>
+    <!-- Form -->
+         
+  </div>
+ 
+</div>
+<!-- Material form login -->
+      </div>
+    </div>
+  </div>
+
+  
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+      <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>
