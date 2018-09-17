@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Usuarios</title>
-    <meta charset="utf-8">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Transferencias de Productos</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
 </head>
+
 <body>
-  <!-- Navbar -->
-  <nav class="navbar  navbar-expand-lg navbar-dark indigo scrolling-navbar m-0 p-1">
+
+   <!-- Navbar -->
+   <nav class="navbar  navbar-expand-lg navbar-dark indigo scrolling-navbar m-0 p-1">
       <div class="container">
   
         <!-- Brand -->
@@ -95,86 +98,46 @@
       </div>
     </nav>
     <!-- Navbar -->
+    <main class="main__trans">
+      
+  
+      
 
-      <main class="add_user">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 add_user wrap">
-                <form class="text-center  pt-2 mt-4">
-                        <p class="tit_ font-weight-bold">Creación de Usuarios.</p><hr>
-                        <!-- CATEGORIAS -->
-                        <label class="font-weight-bold">Permisología</label>
-                        <select class="custom-select mb-3" id="inputGroupSelect01">
-                        <option selected>Seleccione la Permisología...</option>
-                        <option value="1">Administrador</option>
-                        <option value="2">Supervisor</option>
-                        <option value="3">Cajero</option>
-                        </select>
-                        <span class="font-weight-bold">Alias del Usuario</span>
-                        <input type="text" id="defaultRegisterFormEmail" class="form-control mb-2" placeholder="Alias del Usuario">
-                        <span class="font-weight-bold">Nombre y Apellido</span>
-                        <input type="text" id="defaultRegisterFormEmail" class="form-control mb-2" placeholder="Nombre y Apellido">
-                        <span class="font-weight-bold">Contraseña</span>
-                        <input type="text" id="defaultRegisterFormEmail" class="form-control mb-2" placeholder="Contraseña">
-                        <button class="btn  unique-color-dark my-4 btn-block" type="">Crear Usuario </button>
-                    </form>
+    </main>
+  <!--Main layout-->
 
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn fixed-bottom">
 
-                </div>
+    
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2018 Copyright:
+      <a href="#" target="_blank"> JJ Web </a>
+    </div>
+    <!--/.Copyright-->
 
+  </footer>
+  <!--/.Footer-->
 
+  <!-- SCRIPTS -->
 
-
-                <div class="col-7 all_users_wrap border ml-4 b-box">
-
-                    <p class="tit_ font-weight-bold text-center">Gestión de Usuarios</p><hr>
-                    <!-- ###### los div para mostrar los productos -->
-      <div class="row  p-2 border-bottom pl-2 pr-2" id="">
-            <div class="col-3 font-weight-bold mt-2">Administrador</div>
-            <div class="col-3  font-weight-bold mt-2 text-center">Jorge Espinoza</div>
-            <div class="col-3  font-weight-bold mt-2 text-center">jespinoza</div>
-            <div class="  mt-1  activo" onclick="" disabled>Activo</div>
-            <button class="btn del__ mt-1 primary-color" onclick="editUserWO()">Edit</button>
-      </div>
-<!-- ###### Cierre div para mostrar los productos -->
-<!-- ###### los div para mostrar los productos -->
-
-<div class="row  p-2 border-bottom pl-2 pr-2" id="">
-      <div class="col-3 font-weight-bold mt-2">Cajero</div>
-      <div class="col-3  font-weight-bold mt-2 text-center">Elwe Bomio</div>
-      <div class="col-3  font-weight-bold mt-2 text-center">EBomio</div>
-      <div class="  mt-1  inactivo" onclick="" disabled>Inactivo</div>
-      <button class="btn del__ mt-1 primary-color" onclick="editUserWO()">Edit</button>
-</div>
-<!-- ###### Cierre div para mostrar los productos -->
-
-                </div>
-            </div>
-        </div>
-
-      </main>
-
-
-
-
-
-
-
-
-        <!-- SCRIPTS -->
+  
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <!-- Bootstrap tooltips -->
+   <script src="js/main.js"></script>
   <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Initializations -->
-  <script type="text/javascript" src="js/main.js"></script>
+ 
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
   </script>
 </body>
+
 </html>

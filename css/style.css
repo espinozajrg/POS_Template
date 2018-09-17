@@ -112,8 +112,19 @@ padding: 0;}
   width: 100%;
 }
 
+.discount{
+  color: #ffbb33;
+}
 
+/*MODAL LOGIN*/
 
+.modal-body label{
+  border: none !important;
+}
+
+.modal-body input:focus{
+  border: none !important;
+}
 
 
 
@@ -126,8 +137,8 @@ padding: 0;}
   background: #dfe6e9;
   border-radius: 4px;
 }
-input{display: none;}
-input+label{
+.form-check input{display: none;}
+.form-check input+label{
   font-size: 18px;
   cursor: pointer;
   padding: 0;
@@ -139,13 +150,13 @@ input+label{
   border-radius: 4px;
   transition: all ease 200ms;
 }
-input:checked+label{
+.form-check input:checked+label{
   background: #1C2331;
   font-weight: bolder;
   padding: .2em 1.2em;
   color: #ffff;
 }
-input:focus{
+.form-check input:focus{
   border: 2px solid #1C2331 !important;
   box-shadow: none !important;
 }
@@ -175,6 +186,14 @@ select:focus{
 .btn-group{
   margin: 0 auto !important;
 }
+.btn__custom2{
+  border-radius: 15px;
+  padding: 0em 1em;
+  color: #1C2331 !important;
+  border: 2px solid #1C2331 !important;
+}
+
+
 .izq{
   height: 100vh;
   background: rgb(255, 255, 255);
@@ -194,6 +213,7 @@ select:focus{
   color: #1C2331;
 
 }
+
 .payment_wrap{
   background: #dfe6e9;
   font-size: 20px;
@@ -269,4 +289,124 @@ select:focus{
   border-radius: 4px;
   height: 1.6em;
 
+}
+
+/* PRINT INVOICES*/
+
+.show_all_invoices{
+  height: 25em;
+  max-height: 25em;
+  background: #b2bec3;
+  width: 100%;
+  border: 1px solid #e3ebee;
+  overflow-y: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############# TASK*/
+
+.tasker ul, .tasker li,
+.tasker .error,
+.tasker button,
+.tasker input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.tasker-header button, .tasker-body .task button {
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+}
+
+
+/*PEN STYLES*/
+.tasker {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.tasker .error {
+  display: none;
+  background: rgba(237, 28, 36, 0.7);
+  color: #fff;
+  padding: 14px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.tasker ul {
+  background: #fff;
+}
+.tasker li,
+.tasker .error,
+.tasker button,
+.tasker input {
+  font: 18px/1.25em Helvetica, Arial, Sans-serif;
+}
+
+.tasker-header {
+  display: inline-flex;
+  background: #313e50;
+  justify-content: space-between;
+  width: 100%;
+}
+.tasker-header input,
+.tasker-header button {
+  color: #fff;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  padding: 14px;
+}
+.tasker-header input {
+  flex-grow: 2;
+}
+.tasker-header button {
+  background: #1dd2af;
+  border-left: 1px solid #1eddb8;
+}
+.tasker-header button:hover {
+  background: #20e7c1;
+}
+
+.tasker-body .task {
+  display: block;
+  position: relative;
+  padding: 14px 40px 14px 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.tasker-body .task:last-child {
+  border-bottom: none;
+}
+.tasker-body .task:hover > button {
+  opacity: 1;
+}
+.tasker-body .task.completed {
+  color: #cdcdcd;
+  text-decoration: line-through;
+}
+.tasker-body .task input {
+  margin-right: 10px;
+}
+.tasker-body .task button {
+  color: #cdcdcd;
+  margin: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+.tasker-body .task button:hover {
+  color: #ed1c24;
 }

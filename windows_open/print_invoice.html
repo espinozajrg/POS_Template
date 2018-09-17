@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imprimir</title>
+    <meta charset="utf-8">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+      <main class="print_invoice">
+        <div class="container">
+            <div class="row">
+            <div class="col-12 add_user wrap align-items-center align-content-center">
+                <form class="text-center  pt-2 mt-4">
+                    <p class="tit_ font-weight-bold">Buscar por Fecha</p><hr>
+                    <!-- Buscar Facturas -->
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-3">
+                    <span><strong>Seleccione la Fecha</strong></span>
+                    <div id="datepicker" class="input-group date mt-1" data-date-format="mm-dd-yyyy">
+                    <input class="form-control" type="text" />
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                    </div>
+                    </div>
+                    <button class="btn  success-color
+                    my-4" type="" >Buscar</button>
+                    </div>
+                    <hr>
+                    <div class="col-12 show_all_invoices">
+<!-- ###### los div para mostrar los productos -->
+        <div class="row  p-0 m-0 border-bottom wrapping_detail mt-1" id="">
+        <div class="col-3 font-weight-bold mt-2">Numero de Factura</div>
+        <div class="col-3 font-weight-bold mt-2">Cliente</div>
+        <div class="col-2  font-weight-bold mt-2 text-center">Total Venta</div>
+        <div class="col-1  font-weight-bold mt-2 text-center">Descuesto</div>
+        <div class="col-1 "><button class="btn primary-color del__ mt-2" >Ver</button></div>
+        <div class="col-1 "><button class="btn default-color
+            del__ mt-2" >Imprimir</button></div>
+        </div>
+      <!-- ###### Cierre div para mostrar los productos -->
+
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+      </main>
+
+
+
+
+
+
+
+
+        <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="../js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript" src="../js/main.js"></script>
+  
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+</html>
