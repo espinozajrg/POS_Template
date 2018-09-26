@@ -8,21 +8,12 @@ padding: 0;}
 .b-box{
   box-sizing: border-box;
 }
-.tit_{
-  font-size: 20px;
-  font-weight: bolder;
-  padding: 0;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-/* Full Page Carousel itself*/
-.carousel {
-  height: 100%; }
-  .carousel .carousel-inner {
-    height: 100%; }
-    .carousel .carousel-inner .carousel-item,
-    .carousel .carousel-inner .active {
-      height: 100%; }
+
+/* ########### LOGIN */
+
+
+
+
 
 /* Navbar animation */
 .navbar {
@@ -148,7 +139,7 @@ padding: 0;}
   border: 1px solid #1C2331;
   padding: .2em 1.2em;
   border-radius: 4px;
-  transition: all ease 200ms;
+  transition: all ease 250ms;
 }
 .form-check input:checked+label{
   background: #1C2331;
