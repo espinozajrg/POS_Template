@@ -156,13 +156,13 @@
                             
                           </tr>
                           <tr>
-                              <th scope="row">2</th>
+                              <th scope="row">3</th>
                               <td>Soluciones Farmapatria</td>
+                              <td><input value="sin info" id="inputval" ></td>
                               <td>Sin Info</td>
                               <td>Sin Info</td>
                               <td>Sin Info</td>
-                              <td>Sin Info</td>
-                              <td><button class="btn del__ mt-2 warning-color-dark" onclick="">Editar</button></td>
+                              <td><button class="btn del__ mt-2 warning-color-dark click"  >Editar1</button></td>
                             </tr>
                             
                           </tr>
@@ -174,7 +174,17 @@
     </div>
 </main>
 
+<script>
+$(document).ready(function() {
+    var button = $('#inputval');
+    $(button).attr('disabled', 'disabled');
 
+    $('.click').click(function() {
+        if ($(button).attr('disabled')) $(button).removeAttr('disabled');
+        else $(button).attr('disabled', 'disabled');
+    });
+});
+</script>
 
 
 
